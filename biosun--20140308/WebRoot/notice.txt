@@ -1,0 +1,61 @@
+ff.jsp
+eval(
+cursor:hand
+
+Beijing Time: 17:00, Fri. 26/03/2010
+
+pageNo 的显示100
+
+getList()没有翻页
+
+update products_table set p_pic='' where p_pic='NO';
+update products_table set ec_1='' where ec_1='NO';
+update products_table set ec_2='' where ec_2='NO';
+
+alter table `mail_table` add column `mailPrefix` varchar(1000) CHARSET utf8 COLLATE utf8_general_ci DEFAULT '' NULL after `mail_pw`, add column `mailSuffix` varchar(1000) CHARSET utf8 COLLATE utf8_general_ci DEFAULT '' NULL after `mailPrefix`;
+
+alter table `buy_car` add column `userId` varchar(100) NULL after `p_count`,add column `p_model` varchar(100) NULL after `userId`, add column `p_pic` varchar(150) NULL after `p_model`,add column `p_name` varchar(150) NULL after `p_pic`;
+
+update buy_car,enquiry set userId=enquiry.user_id where buy_car.en_id=enquiry.en_id;
+
+update buy_car,products_table set buy_car.p_model=products_table.p_model,buy_car.p_pic=products_table.p_pic,buy_car.p_name=products_table.p_name where buy_car.p_id=products_table.p_id;
+
+alter table `com_table` add column `p_model` varchar(100) NULL after `com_date`,add column `p_name` varchar(150) NULL after `p_model`, add column `p_pic` varchar(150) NULL after `p_model`;
+
+update com_table,products_table set com_table.p_model=products_table.p_model,com_table.p_pic=products_table.p_pic,com_table.p_name=products_table.p_name where com_table.p_id=products_table.p_id;
+
+alter table `admin_log` add index `login_date_index` (`login_date`);
+alter table `article` change `content` `content` varchar(10000) NOT NULL;
+alter table `article` add index `article_type_index` (`article_type`);
+alter table `big_table` change `content` `content` varchar(10000) NULL ;
+alter table `com_table` change `com_content` `com_content` varchar(10000) NULL ;
+alter table `com_table` add index `com_date_index` (`com_date`);
+alter table `con_table` change `con_other` `con_other` varchar(10000) default '' NULL ;
+alter table `enquiry` change `ot_ms` `ot_ms` varchar(10000) NULL ;
+alter table `enquiry` add index `en_date_index` (`en_date`);
+alter table `news_table` change `content` `content` varchar(10000) NOT NULL;
+alter table `news_table` add index `news_type_news_date_index` (`news_type`, `news_date`);
+alter table `news_table` change `content` `content` varchar(10000) NOT NULL ;
+alter table `products_table` change `detail1` `detail1` varchar(5000) NULL , change `detail2` `detail2` varchar(5000) NULL ;
+alter table `products_table` change `app` `app` varchar(2500) NULL , change `sc` `sc` varchar(2500) NULL ;
+alter table `products_table` change `oc` `oc` varchar(2500) NULL , change `sp` `sp` varchar(2500) NULL ;
+alter table `products_table` change `sp` `sp` varchar(2000) NULL , change `other` `other` varchar(500) NULL ;
+alter table `products_table` add index `big_id_index` (`big_id`);
+alter table `products_table` add index `small_id_index` (`small_id`);
+alter table `products_table` add index `big_id_small_id_index` (`big_id`, `small_id`);
+alter table `products_table` add index `p_date_index` (`p_date`);
+alter table `small_table` change `content` `content` varchar(10000) NULL ;
+alter table `big_table` add index `big_order_index` (`big_order`);
+alter table `small_table` add index `small_order_index` (`small_order`);
+alter table `supply_table` add index `supply_date_index` (`supply_date`);
+alter table `user_inf` change `login_log` `login_log` varchar(10000) NULL ;
+alter table `user_inf` add index `reg_date_index` (`reg_date`);
+
+
+
+alter table `products_table` change `detail1` `detail1` text NULL , change `detail2` `detail2` text NULL , change `app` `app` text NULL , change `sc` `sc` text NULL , change `oc` `oc` text NULL , change `sp` `sp` text NULL , change `other` `other` text NULL ;
+alter table `article` change `content` `content` text NOT NULL;
+alter table `big_table` change `content` `content` text NULL ;
+alter table `mail_table` change `mailPrefix` `mailPrefix` text NULL , change `mailSuffix` `mailSuffix` text NULL ;
+alter table `news_table` change `content` `content` text NOT NULL;
+alter table `small_table` change `content` `content` text NULL ;

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<something-else-entirely>
+	<proxool>
+		<alias>dafault</alias>
+		<driver-url>
+			jdbc:mysql://localhost:3306/biosun?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull
+		</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="123456" />
+		</driver-properties>
+		<house-keeping-sleep-time>40000</house-keeping-sleep-time>
+		<house-keeping-test-sql>
+			select CURRENT_DATE
+		</house-keeping-test-sql>
+		<maximum-connection-count>100</maximum-connection-count>
+		<minimum-connection-count>5</minimum-connection-count>
+		<maximum-connection-lifetime>
+			18000000
+		</maximum-connection-lifetime>
+		<simultaneous-build-throttle>5</simultaneous-build-throttle>
+		<recently-started-threshold>40000</recently-started-threshold>
+		<overload-without-refusal-lifetime>
+			50000
+		</overload-without-refusal-lifetime>
+		<maximum-active-time>60000</maximum-active-time>
+		<verbose>true</verbose>
+		<trace>true</trace>
+		<fatal-sql-exception>Fatal error</fatal-sql-exception>
+		<prototype-count>2</prototype-count>
+	</proxool>
+</something-else-entirely>

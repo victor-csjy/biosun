@@ -1,0 +1,112 @@
+BODY {
+	MARGIN: 0px; BACKGROUND-COLOR: #ffffff
+}
+BODY {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial
+}
+TD {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial
+}
+TH {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial
+}
+
+A {
+	FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+
+A:hover {
+	LEFT: 1px; COLOR: #FF0000; POSITION: relative; TOP: 1px; TEXT-DECORATION: none;filters:alpha(opacity=10)
+}
+
+A.c {
+	FONT-SIZE: 9pt; COLOR: #595959; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+A.c:hover {
+	FONT-SIZE: 9pt; COLOR: #fa0026; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+A.b {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.b:hover {
+	FONT-SIZE: 9pt; COLOR: #fa0026; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.style1 {
+	COLOR: #fa0026; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style2 {
+	COLOR: #595959
+}
+.style3 {
+	COLOR: #fa0026
+}
+.style4 {
+	COLOR: #a5a5a5
+}
+.style5 {
+	FONT-SIZE: 16px; COLOR: #fa0026
+}
+.sj1 {
+	PADDING-LEFT: 16px
+}
+.input {
+	BORDER-RIGHT: #e3e3e3 1px solid; BORDER-TOP: #e3e3e3 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #e3e3e3 1px solid; COLOR: #000000; BORDER-BOTTOM: #e3e3e3 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.sj2 {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.sj3 {
+	PADDING-RIGHT: 16px
+}
+.sj4 {
+	PADDING-LEFT: 10px
+}
+.sj5 {
+	PADDING-LEFT: 26px
+}
+.ner {
+	LINE-HEIGHT: 22px
+}
+.neirong1 {
+	BACKGROUND-POSITION: left top; FONT-SIZE: 9pt; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(/images/nei_12_04.jpg); LINE-HEIGHT: 22px; BACKGROUND-REPEAT: no-repeat
+}
+
+.title {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.STYLE6 {
+	color: #878a8e;
+	font-size: 12;
+}
+.STYLE11 {color: #838383}
+body {
+	background-color: #FFFFFF;
+}
+.STYLE12 {color: #FFFFFF}
+.STYLE13 {font-size: 12px; color: #333333; }
+.STYLE14 {color: #000000}
+.STYLE15 {color: #003366}
+.STYLE16 {
+	font-size: 16pt;
+	font-weight: bold;
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+}
+.STYLE20 {font-family: "Times New Roman", Times, serif; font-size: 14px; }
+.STYLE23 {font-family: "Times New Roman", Times, serif; font-size: 9pt; }
+.STYLE24 {
+	color: #666666;
+	font-weight: bold;
+}
+.STYLE26 {font-family: "Times New Roman", Times, serif; font-size: 9pt; color: #000000; }
+.STYLE27 {
+	color: #73B549;
+	font-weight: bold;
+}
+.STYLE29 {color: #FFFFFF; font-weight: bold; }
+.STYLE30 {color: #000000; font-size: 12; }
+.STYLE31 {font-family: "Times New Roman", Times, serif; font-size: 14px; color: #000000; }
+.STYLE35 {font-size: 12px}
+.STYLE34 {color: #999999}
